@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.example"
+        id          = "com.gmail.mjmb93"
         versionCode = "10" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>PhoneGap Example</name>
+    <name>Receta Colombia</name>
 
     <description>
-        An example for phonegap build docs. 
+        Aplicación que le permite al usuario desarrollar recetas de las regiones de Colombia. 
     </description>
 
-    <author href="https://build.phonegap.com" email="support@phonegap.com">
+    <author href="https://build.phonegap.com" email="mjm93@gmail.com"> 
         Hardeep Shoker 
     </author>
     <icon src="icon.png" />
