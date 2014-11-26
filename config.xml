@@ -1,1 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.gmail.mjmb93"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Receta Colombia</name>
+
+    <description>
+        Receta Colombia es una aplicación móvil que le permite al usuario desarrollar recetas típicas de las regiones Colombianas. 
+    </description>
+
+    <author href="https://build.phonegap.com" email="mjmb93@gmail.com">
+        Hardeep Shoker 
+    </author>
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+
+</widget>
