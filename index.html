@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html class="ui-mobile"><head>
-    
 <title>Receta Colombia</title>
-	<meta charset="utf-8">
-   	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/themes/receta.css" />
-    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
-	<link rel="stylesheet" href="estilo.css">
-  	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
-  	<script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/themes/receta.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="estilo.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 
-<body class="ui-mobile-viewport ui-overlay-a">
+<body>
 
 
 
 <div data-role="page" id="inicial">
-
+		
 		<div data-role="panel" data-display="overlay" id="mipanel" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-inherit ui-panel-animate ui-panel-closed">
     		<div class="ui-panel-inner">
             <ul data-role="listview" class="ui-listview">
@@ -28,9 +27,9 @@
                     <div data-role="collapsible" data-collapsed-icon="clock" data-inset="false" style="margin-top: 1em">
                         <h4>Duración</h4>
                         <ul data-role="listview">
-                        <li><a href="#">25 minutos</a></li>
-                        <li><a href="#">1 hora</a></li>
-                        <li><a href="#">2 horas o más</a></li>
+                        <li><a href="#poco">25 minutos</a></li>
+                        <li><a href="#medio">1 hora</a></li>
+                        <li><a href="#alto">2 horas o más</a></li>
                         </ul>
                     </div>
     </div>
@@ -50,10 +49,9 @@
         
 </div>
     <div role="main" class="ui-content">
-        
-        <img src="img/ajiaco.png" width="320" height="213" alt="ajiaco">
-        <img src="img/bandejapaisa.png" width="320" height="213" alt="bandeja">
-        <img src="img/Mojarra-Frita.png" width="320" height="213" alt="mojarra">
+        <video src="video.mp4" controls>
+          Tu navegador no implementa el elemento <code>video</code>.
+        </video>
     </div>
 </div>
 
@@ -71,11 +69,12 @@
     </div>
 	<div role="main" class="ui-content">
         <div class="ui-grid-a">
-            <div class="ui-block-a"><a href="#andina"> <img src="img/antioquia08.jpg" style="width:100%"></a></div>
-            <div class="ui-block-b"><a href="#caribe"> <img src="img/caribe1.jpg" style="width:100%"></a></div>
+        	
+            <div class="ui-block-a"><a href="#andina"> <img src="img/andina.jpg" style="width:100%"></a></div>
+            <div class="ui-block-b"><a href="#caribe"> <img src="img/caribe.jpg" style="width:100%"> </a></div>
             <div class="ui-block-a"><a href="#pacifico"> <img src="img/pacifico.jpg" style="width:100%"></a></div>
-            <div class="ui-block-b"><a href="#amazonas"> <img src="img/PaisajeAmazonas10.jpg" style="width:100%"></a></div>
-            <div class="ui-block-a"><a href="#orinoquia"> <img src="img/llanos10.jpg" style="width:100%"></a></div>
+            <div class="ui-block-b"><a href="#amazonas"> <img src="img/amazonica.jpg" style="width:100%"></a></div>
+            <div class="ui-block-a"><a href="#orinoquia"> <img src="img/orinoquia.jpg" style="width:100%"></a></div>
             <div class="ui-block-b"><a href="#insular"> <img src="img/insular.jpg" style="width:100%"></a></div>
         </div><!-- /grid-a -->
     </div>
@@ -93,9 +92,11 @@
     	<h1 class="ui-title" role="heading" aria-level="1">FAVORITOS</h1>
   </div>
 	<div role="main" class="ui-content">
-       <img src="img/ajiaco.png" width="320" height="213" alt="ajiaco">
-        <img src="img/bandejapaisa.png" width="320" height="213" alt="bandeja">
-        <img src="img/Mojarra-Frita.png" width="320" height="213" alt="mojarra">
+    
+    	
+  		<div class=""><a href="#sansantafereno"> <img src="img/ajiaco.png" style="width="320" height="213""></a> </div>
+        <div class=""><a href="#bandejapaisa"> <img src="img/bandejapaisa.png" style="width="10" height="213""></a></div>
+        <div class=""><a href="#mojarra"><img src="img/Mojarra-Frita.png" width="320" height="213" alt="mojarra"></a></div>
     </div>
 </div>
 
@@ -112,6 +113,7 @@
     	<h1 class="ui-title" role="heading" aria-level="1">DURACIÓN</h1>
     </div>
 	<div role="main" class="ui-content">
+    	
         <img src="img/ajiaco.png" width="320" height="213" alt="ajiaco">
         <img src="img/bandejapaisa.png" width="320" height="213" alt="bandeja">
         <img src="img/Mojarra-Frita.png" width="320" height="213" alt="mojarra">
@@ -131,12 +133,11 @@
     </div>
     <div role="main" class="ui-content">
     	<div class="ui-grid-a">
-            <div class="ui-block-a"><a href="#sansantafereno"> <img src="img/sancochosanta.png" style="width:100%"></a></div>
-            <div class="ui-block-b"><a href="#bandejapaisa"> <img src="img/bandeja-paisa.png" style="width:100%"></a></div>
-            <div class="ui-block-a"><a href="#"> <img src="" style="width:100%"></a></div>
-            <div class="ui-block-b"><a href="#"> <img src="" style="width:100%"></a></div>
-            <div class="ui-block-a"><a href="#"> <img src="" style="width:100%"></a></div>
-            <div class="ui-block-b"><a href="#"> <img src="" style="width:100%"></a></div>
+        	
+            <div class=""><a href="#sansantafereno"> <img src="img/ajiaco.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#bandejapaisa"> <img src="img/bandejapaisa.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#tamal"> <img src="img/tamaltolimense.png" style="width:100%"></a></div>
+            <div class=""><a href="#changua"> <img src="img/changua.png" style="width:100%"></a></div>
         </div><!-- /grid-a -->
     </div>
 </div>
@@ -153,7 +154,13 @@
     	<h1>REGIÓN CARIBE </h1>
     </div>
     <div role="main" class="ui-content">
-    	
+    	<div class="ui-grid-a">
+        	
+            <div class=""><a href="#mojarra"> <img src="img/Mojarra-Frita.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#coco"> <img src="img/coco.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#sancocho"> <img src="img/sancocho.png" style="width:100%"></a></div>
+            <div class=""><a href="#arepa"> <img src="img/arepa.png" style="width:100%"></a></div>
+        </div><!-- /grid-a -->
     </div>
 </div>
 
@@ -169,7 +176,13 @@
     	<h1>REGIÓN PACÍFICO </h1>
     </div>
     <div role="main" class="ui-content">
-    
+    	<div class="ui-grid-a">
+        	
+            <div class=""><a href="#cangrejo"> <img src="img/cangrejo.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#almejas"> <img src="img/almejas.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#mariscos"> <img src="img/mariscos.png" style="width:100%"></a></div>
+            <div class=""><a href="#calamares"> <img src="img/calamares.png" style="width:100%"></a></div>
+        </div><!-- /grid-a -->
     </div>
 </div>
 
@@ -185,7 +198,12 @@
       
     	<h1>REGIÓN AMAZONICA </h1>
     </div>
-    <div role="main" class="ui-content">
+    	<div role="main" class="ui-content">
+    		
+    		<div class=""><a href="#tacacho"> <img src="img/tacacho.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#cuy"> <img src="img/cuy.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#inchicapi"> <img src="img/inchicapi.png" style="width:100%"></a></div>
+            <div class=""><a href="#sabalo"> <img src="img/sabalo.png" style="width:100%"></a></div>
     
     </div>
 </div>
@@ -201,6 +219,13 @@
         <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
       
     	<h1>REGIÓN ORINOQUIA </h1>
+    </div>
+    	<div role="main" class="ui-content">
+        
+        	<div class=""><a href="#cachapa"> <img src="img/cachapa.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#hallaca"> <img src="img/hallaca.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#mamona"> <img src="img/Ternera.png" style="width:100%"></a></div>
+            <div class=""><a href="#llano"> <img src="img/llano.png" style="width:100%"></a></div>
     </div>
 </div>
 
@@ -219,6 +244,13 @@
       
     	<h1>REGIÓN INSULAR </h1>
     </div>
+        <div role="main" class="ui-content">
+        
+        	<div class=""><a href="#escabeche"> <img src="img/escabeche.png" style="width="320" height="213""></a> </div> 
+            <div class=""><a href="#ceviche"> <img src="img/ceviche.png" style="width="10" height="213""></a></div>
+            <div class=""><a href="#encocado"> <img src="img/encocado.png" style="width:100%"></a></div>
+            <div class=""><a href="#cazuela"> <img src="img/cazuela.png" style="width:100%"></a></div>
+    </div>
 </div>
 
 
@@ -230,16 +262,17 @@
 <div data-role="page" id="informacion">
 	<div data-role="header">
     	<a href="#inicial" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
-        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+        <h1 class="ui-title" role="heading" aria-level="1"> <img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
       
     	<h1> INFORMACIÓN </h1>
-        
     </div>
+    <div role="main" class="ui-content">
+		<center>
+	         <img src="img/info.jpg" width="316"" height="459" style="width="700"></a></div>    
+              
+
+  </div>
 </div>
-
-
-
-
 
 
 <div data-role="page" id="sansantafereno">
@@ -250,10 +283,1083 @@
     	<h1>AJIACO SANTAFEREÑO </h1>
     </div>
     <div role="main" class="ui-content">
-    	pasos<p>
-        ingredientes<p>
+    	<center>
+    	<img src="img/ajiaco.png" style="width="320" height="213""></a></div>
+    	
+        <b> 5 Personas </b> <p>
+       <b> Ingredientes </b> <p>
+            - 3 libras de pechugas de pollo<br>
+            - 16 tazas de agua<br>
+            - 4 mazorcas tiernas partidas en trozos<br>
+            - 2 libras de papa normal peladas y cortadas<br>
+            - 1 libra de papa criolla peladas y cortadas<br>
+            - 1 rama de cilantro<br>
+            - 1 ramo de guasca<br>
+            - 4 dientes de ajo triturados<br>
+            - 3 tallos de cebolla larga<br>
+            - 1 taza de alcaparras<br>
+            - 1 ½ taza de crema de leche<br>
+            - 4 aguacates medianos partidos<br>
+            - Sal al gusto<p>
+            
+       <b> Preparación </b> <p>
+           Se ponen las pechugas, las papas, la cebolla larga, sal y pimienta a cocinar en agua, durante unos 45 minutos, (hasta que el pollo esté blando y las papas normales, criollas, estén disueltas).<p>
+
+Se sacan las pechugas y la cebolla; Y al caldo se le agregan las mazorcas, que se han cocinado aparte, y se deja conservar a fuego lento hasta lograr la densidad deseada. Se le añaden las guascas 5 minutos antes de servirlo.<p>
+
+En caso de que el pollo se desee servir deshilado, se debe agregar en el momento de servirlo. Y en caso de que sea en presa completa, se debe servir una porción en cada plato. También se pueden servir las carnes deshilachadas mezcladas con la crema, y así dar una mejor apariencia.<p>
+
+El plato se acompaña con el aguacate; las alcaparras y la crema de leche se sirven aparte para que cada persona se sirva a gusto.<p>
+
+Las mazorcas se sirven enteras o desgranadas con el ajiaco.
     </div>
 </div>
+
+
+
+<div data-role="page" id="bandejapaisa">
+	<div data-role="header">
+    	<a href="#andina" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>BANDEJA PAISA</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/bandejapaisa.png" style="width="320" height="213""></a></div>
+    	
+        <b> 5 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            3 tazas de frijoles cargamanto o rojos grandes<br>
+            2 cucharadas de aceite<br>
+            2 lbs de carne molida<br>
+            1 taza de hogao o guiso<br>
+            2 lbs de tocino<br>
+            6 huevos<br>
+            6 chorizos<br>
+            3 aguacates<br>
+            1 libra de arroz<br>
+            3 Plátanos dulces o tostones (plátanos machos)<br>
+            Arepa<br>
+            4 cebollas grandes<br>
+            4 tomates (jitomates)<br>
+            Aceite, al gusto<br>
+            2 lbs de carne de pulpa molida<br>
+            3 tazas de harina de maíz precocida (blanca o amarilla) para arepas<br>
+            2 tazas de agua tibia<br>
+            Sal al gusto <p>
+            
+	<b> Preparación </b> <p>
+Remojar los frijoles en agua hasta cubrirlos la noche anterior a su preparación; cocinarlos en esa misma agua, con la mitad del aceite. Cuando estén blandos, agregarle la sal.<p>
+Mientras tanto, sofríe la carne molida en aceite a fuego medio alto añadiendo la mitad del hogao y revuélvelo bien. fríe los chicharrones hasta que queden tostados o al punto deseado.<p>
+Cuando los frijoles estén blandos, añade el guiso restante y cocina entre 5 y 10 minutos adicionales para darles espesor. Luego, en una sartén, coloca aceite para freír los plátanos dulces o los patacones y los huevos fritos.<p>
+Hogao o guiso: Mézclalo todo y cocínalo en una sartén durante 10 minutos.<p>
+Arepas: En un tazón suficientemente grande para amasar, coloca la harina de maíz. Sobre la harina agrega aceite. Añádele sal al agua, viértela y mezcla hasta conseguir una masa consistente. Haz bola de masa en tu mano y aplánala con tus dos manos hasta darle una forma redondita. Luego en una sartén con poco aceite, asa las arepas hasta que se doren ambos lados.
+
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="tamal">
+	<div data-role="header">
+    	<a href="#andina" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>TAMAL TOLIMENSE</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/tamaltolimense.png" style="width="320" height="213""></a></div>
+    	
+        <b> 15 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            400gr de arvejas secas cocinadas <br>
+            ½ libra de arroz cocido <br>
+            400gr de maíz blanco trillado  <br>
+            1 pollo grande picado en trozos <br>
+            1 libra de tocino (sin el gordo), solo el cuero picado en trozos <br>
+            2 libras de costilla de cerdo picada <br>
+            ½ libra de zanahorias cortadas en rodajas <br>
+            2 libras de papas crudas peladas y picadas <br>
+            4 huevos cocinados cortados en rodajas <br>
+            1 libra de cebolla larga picada <br>
+            3 dientes de ajo picados <br>
+            2 ½ litros de caldo donde se han cocinado las carnes <br>
+            Sal, cominos, pimienta y color al gusto <br>
+            Hojas de plátano <br>
+            Cabuya para amarrarlos. <p>
+            
+       <b> Preparación </b> <p>
+Adobe y prepare el pollo con sal, pimienta y comino.  <p>
+
+Cocine el cuero del tocino y la costilla de cerdo en 2 ½ de agua por 20 minutos y conserve el caldo. <p>
+
+Prepare un guiso con la cebolla, los ajos y el color; y fríalos con los gordos del tocino. Revuélvalo con el arroz, la arveja y la masa de maíz. Deje reposar. <p>
+
+Engrase las hojas y comience a armar el tamal; agregando los ingredientes de tal manera que quende bien esparcidos por todo el plato. Primero la masa; luego las carnes, las papas y los huevos. <p>
+
+Adicione más masa y forme el tamal recogiendo las puntas y bordes de las hojas. Recuerde amarrarlo bien para que no se entre el agua y se estropee la receta. <p>
+
+Finalmente póngalo a cocinar entre 3 y 4 horas a fuego moderado.
+
+ 	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="changua">
+	<div data-role="header">
+    	<a href="#andina" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CHANGUA</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/changua.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            2 tazas de agua<br>
+            2 tazas de leche<br>
+            4 huevos<br>
+            1 taza de cilantro fresco<br>
+            2 cebollas verdes (cebollinos) picados<br>
+            Sal y pimienta<br>
+            4 rebanadas de pan tostado<p>
+            
+            
+       <b> Preparación </b> <p>
+			Para iniciar, debes colocar el agua y la leche en una olla, depende de la cantidad que desees para esta receta utilizaremos una mediana, sazona con sal y una pizca de pimienta, espera que hierva. <p>
+            Rompe cada uno de los huevos y deslízalos con sumo cuidado sobre la ebullición de la mezcla que realizamos con anterioridad. Tapa la olla y deja hervir de 1 a 2 minutos. Retira los huevos, puedes ayudarte de una cuchara. <p>
+
+Cuando lo hayas realizado, corta la cebolla y el cilantro finamente. Ahora bien, incorpora lentamente la sopa en el plato donde vayas a servir y coloca el cilantro, cebolla y como elemento decorativo una rodaja de pan con el huevo que previamente retiraste. 
+
+ 	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="mojarra">
+	<div data-role="header">
+    	<a href="#caribe" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>MOJARRA FRITA</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/Mojarra-Frita.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            -1 pescado por persona <br>
+            -Pescado ó la cantidad que desee<br>
+            -Aceite<br>
+            -Sal<br>
+            -Limón <p>
+            
+            
+       <b> Preparación </b> <p>
+			 Abrir las mojarras, limpiarlas y adobarlas por dentro con sal y limón dejándolas así por 5 minutos para que coja sabor. Freírlas en abundante aceite bien caliente durante 15 minutos, bajar el fuego y cocinar hasta que doren por ambos lados. Este plato se puede acompañar con patacones, una buena porción de arroz con coco y una ensalada de tomate y cebolla.
+
+ 	</div>
+</div>
+
+
+
+<div data-role="page" id="coco">
+	<div data-role="header">
+    	<a href="#caribe" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>ARROZ CON COCO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/coco.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            -1 pescado por persona <br>
+            -Pescado ó la cantidad que desee<br>
+            -Aceite<br>
+            -Sal<br>
+            -Limón <p>
+            
+            
+       <b> Preparación </b> <p>
+			 Abrir las mojarras, limpiarlas y adobarlas por dentro con sal y limón dejándolas así por 5 minutos para que coja sabor. Freírlas en abundante aceite bien caliente durante 15 minutos, bajar el fuego y cocinar hasta que doren por ambos lados. Este plato se puede acompañar con patacones, una buena porción de arroz con coco y una ensalada de tomate y cebolla.
+
+ 	</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="sancocho">
+	<div data-role="header">
+    	<a href="#caribe" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>SANCOCHO DE PESCADO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/sancocho.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            2 Libras de cabezas de pescado preferiblemente bagre <br>	
+            4 Platos de agua <br>
+            4 Trozos pequeños de yuca chiroza <br>
+            1 Plátano quindiano <br>
+            Hojas de cimarrón<br> 
+            1 Bolsita de leche de coco<br>
+            Cilantro<br>
+            Azafrán de raíz <br>
+            Medio tallo de cebolla larga<br>
+            Un pedacito de pimentón <br>
+            Una cabeza de ajo<br>
+            Medio tomate chonto <br>
+            Sal al gusto <p>
+            
+            
+       <b> Preparación </b> <p>
+			 La cebolla larga, el pimentón, el ajo y el tomate finamente picado se ponen a hervir en la olla con los cuatro platos de agua y sal al gusto.<p>
+Cuando lo anterior haya hervido se le agrega las cabezas de pescado y las hojas de cimarrón, se tapan dejando cocinar a fuego moderado hasta que las cabezas se desbaraten.<p>
+El anterior caldo se cuela, se selecciona la carne que quede de las cabezas del pescado y junto con el azafrán de raíz, se licuan en un poco del caldo. Colocamos lo que licuamos y lo agregamos al caldo que quedó.<p> 
+Ponemos a hervir nuevamente el caldo con la yuca y el plátano (éste debe estar troceado, ni muy grande ni muy chico), se deja cocinar tapado hasta que el plátano y la yuca estén blanditos. <p>
+Por último se agrega la leche de coco.<p>
+Aparte se pica el cilantro y cuando el sancocho esté listo se le agrega, se rvuelve y listo!. El éxito de este sancocho es la calidad del plátano y la yuca. 
+
+ 	</div>
+</div>
+
+
+
+
+<div data-role="page" id="arepa">
+	<div data-role="header">
+    	<a href="#caribe" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>AREPA DE HUEVO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/arepa.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+           1 taza y media de harina precocida de maíz amarillo<br>
+           1 taza y media de agua<br>
+           4 huevos Sal y pimienta al gusto<br>
+           	 Aceite para freír <p>
+            
+            
+       <b> Preparación </b> <p>
+			Mezcle la harina, el agua y un poco de sal. Amase bien y arme las arepas.<p>
+
+Llévelas a freír en abundante aceite caliente hasta que se esponjen, durante 3 minutos aproximadamente.<p>
+
+Páselas por papel de cocina para quitar el exceso de grasa. Con ayuda de un cuchillo abra una pequeña ranura en el borde de la arepa. <p>
+
+Vierta el huevo en un recipiente con pico y vuélquelo al interior de la arepa. <p>
+
+Con los dedos, haga presión sobre la masa para sellar.<p> 
+
+Fría las arepas nuevamente hasta que doren.	 
+
+ 	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="cangrejo">
+	<div data-role="header">
+    	<a href="#pacifico" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>SOPA DE CANGREJO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/cangrejo.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+          	cangrejo de río, 500 gramos<br>
+            zanahoria, 200 gramos<br>
+            hierbas aromáticas, 1 ramillete<br>
+            ron añejo, 1/3 taza<br>
+            concentrado de tomate, 1 cucharada<br>
+            yema de huevo, 1 unidad<br>
+            aceite, 2 cucharadas<br>
+            sal,  al gusto<br>
+            agua, 4 tazas<br>
+            cebolla, 2 unidades<br>
+            apio, 50 gramos<br>
+            diente de ajo, 1 unidad<br>
+            vino blanco seco, 1/2 taza<br>
+            nata líquida, 2 cucharadas<br>
+            mantequilla, 4 cucharadas<br>
+            perejil, 3 ramitas<br>
+            pimienta molida,  al gusto<br>
+            ají,  al gusto<p>
+             
+            
+       <b> Preparación </b> <p>
+			Lavar los cangrejos, pelar las cebollas, picar una de ellas y cortar en aros la otra. Pelar las zanahorias y el apio, y picarlos. Calentar la mantequilla en una cacerola, añadir la cebolla en aros, las hortalizas junto con las hierbas aromáticas, tapar y cocer a fuego muy lento, hasta que las hortalizas empiecen a ablandarse.<p>
+
+Calentar el aceite en una sartén al fuego y saltear los cangrejos con los ajos, perejil picado y la cebolla picada, moviendo con una cuchara de madera. Salpimentar Y flambear con el ron.<p>
+
+Incorporar los cangrejos a la cacerola con su jugo. Añadir el vino, el concentrado de tomate y 4 tazas de agua. Cocer a fuego lento unos 15 minutos. Sacar los cangrejos del caldo, pelarlos, cortar las colas en trocitos y reservar.<p>
+
+Incorporar las cabezas y las cáscaras de los cangrejos a la cacerola, machacar para que suelten el jugo y pasar por un chino. Rectificar la sazón, agregar el ají y cocer 10 minutos más. Batir la yema y la nata, y agregar a la cacerola, revolviendo constantemente. Repartir los cangrejos en cuencos o en una sopera, cubrir con el caldo preparado y servir adornada al gusto.
+
+ 	</div>
+</div>
+
+
+
+
+<div data-role="page" id="almejas">
+	<div data-role="header">
+    	<a href="#pacifico" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>SOPA DE ALMEJAS</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/almejas.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+          	1/2 kg almejas <br>
+            1 paquete puré patatas<br>
+            30 g mantequilla<br>
+            1 vaso vino blanco<br>
+            1 vaso nata lí­quida<br>
+            1 copita coñac<br>
+            2 zanahorias<br>
+            2 puerros<br>
+            nuez moscada<br>
+            pimienta blanca<br>
+            aceite<br>
+            sal<p>
+            
+       <b> Preparación </b> <p>
+			Primero abrimos las almejas al vapor junto con el vino. Retiramos las conchas y colamos el caldo de la cocción. Luego, en una olla mediana derretimos la mantequilla con un poco de aceite, y a fuego suave, rehogamos las zanahorias y los puerros cortados. Cuando veamos que la zanahoria esté ya tierna, lo flameamos con el coñac.<p>
+
+A continuación añadimos un litro de agua y el caldo de las almejas, sazonándolo con sal, pimienta blanca y un poco de nuez moscada. Lo dejamos cocer durante 30 minutos y lo pasamos por el chino.<p>
+
+Por último, lo volvemos a poner en el fuego, y cuando esté muy caliente agregamos la nata y los copos de puré de patata. Lo mezclamos bien y echamos, en último lugar, las almejas. Servimos al momento.
+ 	</div>
+</div>
+
+
+
+<div data-role="page" id="mariscos">
+	<div data-role="header">
+    	<a href="#pacifico" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CAZUELA DE MARISCOS</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/mariscos.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+          	1 crema de mariscos <br>
+            1 cubo de caldo de pescado <br>
+            1 bandeja de camarones crudos <br>
+            1 bandeja de anillos de calamar <br>
+            1/2 filete de congrio cortado en cubos <br>
+            1 cucharada de pasta de ajo <br>
+            1 y 1/2 cucharadas de mantequilla <br>
+            1 pimentón finamente picado <br>
+            2 cucharadas de pasta de tomate <br>
+            1 ramillete de laurel y tomillo <br>
+            4 cucharadas de queso amarillo rallado <br>
+            1 cucharada de perejil liso finamente picado <br>
+            3 tazas de agua <br>
+            1 taza de leche <br>
+            1 cucharada de crema de leche <br>
+            1/2 copa de vino blanco <br>
+            1/2 copa de brandy<br> 
+            1 cucharada de jugo de limón Sal y pimienta al gusto <br>
+            Gotas de ají al gusto<p>
+
+            
+       <b> Preparación </b> <p>
+			Para la crema de mariscos, disuelva el contenido del sobre en el agua y cocine a fuego lento durante cinco minutos, agitando constantemente hasta que hierva; luego, vierta la leche y agite durante cuatro minutos más hasta que la mezcla esté cremosa. Reserve. <p>
+
+Mientras tanto, en una sartén a fuego alto agregue la mantequilla y sofría por un minuto el ajo, el pimentón, el tomillo y el laurel; después adicione los calamares, los cubos de pescado y los camarones, cocinando durante dos minutos más; luego, añada la pasta de tomate, el cubo de pescado, el vino blanco, la crema de leche y el brandy. <p>
+
+Espere a que la preparación tome de nuevo temperatura y adicione sal, pimienta, el jugo de limón y el perejil. <p>
+
+Por último, integre la preparación anterior a la crema de mariscos ya preparada, deje hervir y rectifique el sabor. Sirva y decore con el queso.
+ 	</div>
+</div>
+
+
+
+<div data-role="page" id="calamares">
+	<div data-role="header">
+    	<a href="#pacifico" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>ARROZ CON CALAMARES</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/calamares.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            Arroz carnaroli o doble carolina, 350 g <br>
+            Cebolla, 1<br>
+            Ajo, 2 dientes<br>
+            Morrón verde, 1<br>
+            Tomates, 2<br>
+            Calamares pequeños, 1/2 K<br>
+            Tinta de calamar, 2 sobres<br>
+            Caldo de pescado, cantidad necesaria<br>
+            Sal, a gusto<br>
+            Pimienta, a gusto<br>
+            Laurel, 2 hojas<br>
+            Aceite de oliva, 3 cucharadas<br>
+            Perejil, 50 g<br>
+            Limón, 1<p>
+            
+       <b> Preparación </b> <p>
+		    Picar el morrón y la cebolla finamente.<p>
+            Lavar y cortar el tomate en cubos pequeños.<p>
+            Pelar y cortar el ajo en láminas.<p>
+            Calentar bien el caldo y reservar.<p>
+            En una sartén o paella dorar la cebolla y el morrón.<p>
+            Incorporar el ajo y el tomate.<p>
+            Agregar los calamares y cocinar hasta que se doren.<p>
+            Por último añadir el arroz.<p>
+            Revolver con cuchara de madera.<p>
+            Incorporar la tinta de los calamares al arroz y mezclar.<p>
+            Agregar caldo hasta cubrir bien el arroz negro con calamares.<p>
+            Condimentar con sal, pimienta y laurel.<p>
+            Cocinar unos 15 minutos a fuego suave.<p>
+            Espolvorear el arroz negro con calamares con perejil picado y servir.
+ 	</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="tacacho">
+	<div data-role="header">
+    	<a href="#amazonas" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>TACACHO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/tacacho.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            10 Plátanos verdes<br>
+            3 Cucharadas de manteca<br>
+            250 gr de ChIcharrón cortado en trozos.<br>
+            500 gr de cecina (de cerdo)<br>
+            Sal<p>
+            
+       <b> Preparación </b> <p>
+		    Empieza a preparar este riquísimo plato de la selva pelando los plátanos y luego pon a cortar el lajas. De ahí, fríelos hasta que estén bien cocidas por dentro y machácalos con la ayuda de un mazo. Añade la manteca, mézclala bien y luego agrega el chicharrón cortado en pequeños trozos.<p>
+
+Para que consigas una mejor mezcla de todos los ingredientes es preferible que lo hagas con las manos y después empieza a formar las bolas de tacacho en el tamaño que gustes.<p>
+
+Por otro lado, en una sartén ponte a freír la cecina. Así lograrás que ambas cosas estén listo a la vez.
+ 	</div>
+</div>
+
+
+
+
+<div data-role="page" id="cuy">
+	<div data-role="header">
+    	<a href="#amazonas" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CUY FRITO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/cuy.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            4 cuyes deshuesados<br>
+            1 kg. maíz blanco pelado y remojado<br>
+            1 litro de aceite<br>
+            5 ajíes amarillos<br>
+            1 ramas de huacatay<br>
+            2 cebollas<br>
+            1 tomate sin piel ni pepas<br>
+            1 rama de hierbabuena<br>
+            jugo de 2 limones<br>
+            1 kg. papas blancas con piel y sancochadas<p>
+            
+       <b> Preparación </b> <p>
+		    Sazone los cuyes con sal por ambos lados y páselos por el maíz molido hasta que queden totalmente cubiertos. Reserve una cucharadita y media de aceite, y caliente el resto en una sartén grande a fuego alto. Coloque un cuy y ponga encima una plancha de acero o una piedra grande y limpia, para evitar que el cuy se doble.<p>
+             Fría durante cinco minutos. Retire la plancha de acero o la piedra, voltee el cuy y déjelo dorar durante cinco minutos más. Retire el cuy y deje escurrir sobre papel absorbente. Repita el mismo procedimiento con los cuyes restantes. Aparte, cocine los ajíes en una olla con agua hirviendo, durante 10 minutos.<p> 
+             Escúrralos y licúelos con el huacatay y una cucharada de aceite. Sazone con sal el ají de huacatay y reserve.<p>
+              Mezcle en un bol la cebolla con el tomate, la hierbabuena, el aceite restante y el jugo de limón. Sazone la salsa con sal.<p> 
+              Sirva los cuyes fritos junto con el ají huacatay, la salsa criolla y las papas. 
+ 	</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="inchicapi">
+	<div data-role="header">
+    	<a href="#amazonas" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>INCHICAPI</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/inchicapi.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            1 Gallina cortada en presas (puede ser pollo)<br>
+            ½ kilo Maní remojado y pelado<br>
+            1 Cebolla picada<br>
+            2 Dientes de ajos pelado<br>
+            1/4 Culantro o sacha culantro<br>
+            1 Yuca Mediana<br>
+            1 Choclo<br>
+            Sal, Laurel y orégano al gusto.<p>
+            
+       <b> Preparación </b> <p>
+		    Ponemos a hervir la gallina en una olla con tres litros de agua, la cebolla, ajos, sal y laurel. <p>
+
+Cuando la gallina lleva 20 minutos hirviendo tomamos un poco de este caldo y con esto licuamos el maní y añadimos esta masa al caldo donde la gallina continúa hirviendo.<p>
+
+Es importante estar removiendo constantemente porque el maní suele levantarse como la espuma de la leche y además tiende a pegarse en el fondo de la olla. Mantener el fuego medio/lento. Esta mezcla debe hervir por unos 20 minutos aproximadamente.<p>
+
+Al final se le agrega la yuca y el choclo cortados en trozos. Hervimos unos 20 minutos más, verificamos la sal, y está listo.<p>
+
+Se sirve en platos hondos, un poco de la sopa (que debe tener una textura cremosa), una presa de pollo, un trozo de yuca y un trozo de choclo. Se puede acompañar con plátano verde cocido o arroz blanco que los pondremos en un plato aparte, o con nada. Esta sopa tiende a llenar, por lo que generalmente no es necesario un segundo plato.
+ 	</div>
+</div>
+
+
+
+
+<div data-role="page" id="sabalo">
+	<div data-role="header">
+    	<a href="#amazonas" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>SÁBALO ASADO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/sabalo.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            1 sábalo<br>
+            4 cebollas grandes picadas en pluma<br>
+            4 tomates pelados picados finos<br>
+            4 locotos verdes cortados en tiras<br>
+            1 taza de vino blanco<br>
+            Jugo de tres naranjas medianas<br>
+            Aceite y vinagre al gusto<br>
+            Sal y pimienta a gusto<p>
+            
+       <b> Preparación </b> <p>
+		    Escame el sábalo lo mejor que pueda, sáquele sus entrañas y lávelo bien.<p>
+
+A la víspera de su preparación póngalo en la fuente del horno y saque las espinas de todo el pescado sin deshacerlo. Entonces úntelo con el jugo de las naranjas para dejarlo reposar toda la noche.<p>
+
+Al dia siguiente prepare una sarza con la cebolla, el tomate y el locoto bien aliñados con aceite, vinagre, sal y pimienta a su gusto.<p>
+
+Sale un poco el pescado y rellénelo con la sarza, métalo al horno junto con el vino.<p>
+
+Deje cocer rociándolo a cada rato con el jugo que salga de la cocción.<p>
+
+Una vez que esté cocido sáquelo del horno y sívalo en pedazos grandes acompañados de un buen arroz graneado, papas fritas y ensalada.
+ 	</div>
+</div>
+
+
+
+
+
+<div data-role="page" id="cachapa">
+	<div data-role="header">
+    	<a href="#orinoquia" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CACHAPA</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/cachapa.png" style="width="320" height="213""></a></div>
+    	
+        <b> 6 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		1 Lata de Maíz de 14 oz o 400 gramos<br>
+            2 Cucharadas copetonas de Harina de Trigo<br>
+            1 Huevo<br>
+            1 Pizca de sal<br>
+            1 Cucharada de azúcar<br>
+            Mantequilla<br>
+            Aceite para el Sartén de teflón o Budare<br>
+            Licuadora, batidora de vaso, batidora de mano.<p>
+      
+       <b> Preparación </b> <p>
+		   
+           En una licuadora se agrega el maíz con su líquido, el huevo, la harina de trigo y la sal. Se mezclan los ingredientes, la masa debe quedar gruesa y ordinaria, esta no debe quedar demasiado espesa. Se deja reposar por 5 minutos.<p>
+
+Se pone a calentar un budare o una sartén de teflón sobre la hornilla y una vez caliente, se pone a fuego medio.<p>
+
+Engrásese ligeramente el budare con un papel absorbente con aceite cada vez que se va a hacer una cachapa y, con un cucharón pequeño vierta en el budare alrededor de 1/2 taza de la mezcla, extendiéndola con el cucharón o con una espátula húmeda hasta formar un círculo de unos 10 – 15 centímetros de diámetro y espesor fino. Al formarse burbujitas en toda la superficie y estar los bordes secos y dorados, se voltean con una espátula para cocinarlas por el otro lado, primero despegándola de los bordes, hasta dorar, alrededor de 1 – 2 minuto por cada lado. Retirarla del budare o sartén y ponerla al lado, conservándolas calientes.
+           
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div data-role="page" id="llano">
+	<div data-role="header">
+    	<a href="#orinoquia" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>PABELLON CRIOLLO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/llano.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		Para las caraotas: 1/2 Kg. de caraotas negras<br>
+            2 cebollas medianas<br>
+            1 pimentón rojo<br>
+            cebollín al gusto, ají dulce, piemienta dulce, una pisca de comino<br>
+            un trozo de chuleta o costillas ahumadas.<p>
+<b> Para la carne:</b>
+ 1/2 kg.de falda de res<br>
+ 2 cebollas medianas<br>
+ 2 pimentones (uno verde y uno rojo)<br>
+ ají dulce al gusto<br>
+ 1/2 taza de leche de coco<br>
+ 3 tomates frescos o en lata (al natural)<br>
+ pimienta dulce, sal y pimienta para adobar.<br>
+Arroz Blanco ya preparado.<br>
+Para las tajadas: 1 o 2 plátanos (no cambur) maduros.<p>
+      
+       <b> Preparación </b> <p>
+		  	Caraotas: en una olla colocar agua suficiente para cubrir las caraotas, cuando hierva, agregar las caraotas sal al gusto y la chuleta o costilla,y dejar cocinar por 1 hora o hasta que estén blandas las caraotas, si lo desea puede agregar un cubito de caldo al agua para dar sabor o sal. Mientras haga un sofrito con la cebolla, pimentones, ají, cebollín, agregele pimienta dulce, sal y la pizca de comino. 15 minútos antes de apagar las caraotas agréguele el sofito mezcle y tape hasta que el agua se halla consumido un poco.<p>
+Carne mechada: Cocine la carne en agua hirviendo, sazonada con sal, caldo en cubito, hierbas o a su gusto.<p>
+ Una vez cocinada y fría, prodeda a mecharla (con los dedos separe trozos de carne que parezcan hilachas, desechando pellegos y grasa) corte el resto de los ingredientes en julianas, reogue la cebolla y el pimentón, agregue el tomate, luego la carne sazone, por último agregue la leche del coco, cocine hasta que se haya formado una salsa.Debe quedar jugosa.<p>
+Tajadas: Rebane el platano haciendo cortes transversales, las tajadas deben ser de 1/2 cm. de espesor o un poquito menos. En aceite bien caliente fríalas hasta que estén doradas.<p>
+Una vez que todo esté listo sirva una taza de arroz blanco, una taza de caraotas, una porción de carne mechada y rodee con tres o cuatro tajadas (esto en el mismo plato, para una persona con buen apetito).
+
+ 
+           
+</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="mamona">
+	<div data-role="header">
+    	<a href="#orinoquia" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>MAMONA A LA LLANERA </h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/Ternera.png" style="width="320" height="213""></a></div>
+    	
+        <b> +20 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		1 ternera de un año de edad<br>
+            Sal<br>
+            Condimientos<br>
+            Cerveza<p>
+      
+       <b> Preparación </b> <p>
+		   Saque las presas más características de la ternera como son la osa, la raya, las costillas, la garza, los pechos, los lomos, las pulpa negras, el entreverao, entre otros.<p>
+Prepare la hoguera con anticipación con el objetivo de que tenga mas brasas que fuego.<p>
+Sasone cada una de estas presas con sal y condimientos y ensartela en chuzos de madera o de hierro.<p>
+Ponga la carne (los chuzos) a fuego lento, separadas unas de otras sin avivar el fuego para no quemar o arrebatar la carne.<p>
+Bañe las carnes con cerveza y voleteelas para que se cocinen completamente.<p>
+Saquela del fuego y está lista la mamona para servir en los platos.<p>
+se puede acompañar con yuca y platano.
+           
+</div>
+</div>
+
+
+
+
+
+
+<div data-role="page" id="hallaca">
+	<div data-role="header">
+    	<a href="#orinoquia" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>HALLACA</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/hallaca.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		¾ de taza de manteca de cerdo<br>
+            6 libras (aproximadamente 3 kilos) de pernil de cerdo, limpio y cortado en cubitos de media pulgada (poco más de un centímetro)<br>
+            3 ½ tazas de cebollas, troceadas<br>
+            6 dientes ajo, troceados<br>
+            1 taza de cebollín (cebolla verde), troceado<br>
+            2 tazas de ajo porro troceado<br>
+            2 ½ tazas de pimentón (pimiento) rojo, sin venas ni semillas, troceado<br>
+            6 ajíes dulces, sin venas ni semillas, troceado<br>
+            2 ½ tazas de tomates sin semillas, troceados<br>
+            8 onzas de salsa inglesa<br>
+            1/3 de taza de vinagre de vino tinto<br>
+            ½ taza de encurtidos en mostaza<br>
+            1 taza de vino de cocinar (tipo moscatel)<br>
+            1 taza de papelón (panela o piloncillo) rallado o cortado en trozos<br>
+            Sal marina<br>
+            Pimienta negra recién molida<br>
+            Comino<br>
+            1 gallina, cortada en presas<br>
+            1 taza de caldo de gallina<br>
+            2 cucharadas de pasta de tomate<p>
+      
+       <b> Preparación </b> <p>
+		   
+           Abra las hojas y con mucho cuidado, corte cada 3O centímetros, eliminando las que estén partidas. Primero se cortan 25 ó 30 hojas para tender la masa y posteriormente la misma cantidad para la segunda envoltura, que pueden ser más estrechas o puede utilizar dos hojas. <p>
+ Lave las hojas con mucho cuidado, séquelas muy bien, tápelas con un paño seco.<p>
+  Pique todos los ingredientes: las carnes de tamaño regular, los aliños bien menudos.<p>
+   En un caldero grande, a fuego vivo coloque una cuarta parte del aceite onotado y los ajos machacados. <p>
+   Cuando el aceite tome el sabor del ajo, agregue los aliños y baje la llama.<p>
+ Cuando esté listo el sofrito se va agregando las carnes y se va mezclando de forma uniforme, inmediatamente se agrega la sal, pimienta y comino al gusto, los encurtidos en mostaza y las alcaparras, mezclando todos los ingredientes.<p> 
+ Deje cocinar el tiempo que tarde en preparar el "cuajo" con 50 gramos de masa y medio litro de agua, desbaratando la masa en el agua hasta formar una crema.<p> 
+ Agréguelo al guiso mezclando muy bien, deje cocinar por 3 minutos más, retírelo del fuego y déjelo reposar. Amase con agua, sal y aceite onotado, procurando que la masa sea suave.<p> 
+ Coloque una porción de masa en una hoja previamente engrasada y extiéndala lo más delgado y uniforme que pueda. Rellene con una porción de guiso, adorne con aceitunas, pasas (y si lo prefiere agregue ruedas de cebolla, tiras de pimentón).<p>
+  Envuelva, coloque la segunda hoja, amarre y cocine en suficiente agua con sal y un trozo de papelón, (panela), en la que va a colocar las hallacas cuando comience a hervir. <p>
+ Tape, deje que comience a hervir nuevamente, deje pasar una hora y sáquelas del agua. Mientras las estemos sacando del caldero no se debe apagar el fuego, para que no penetre agua en la hallaca
+           
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="escabeche">
+	<div data-role="header">
+    	<a href="#insular" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>PESCADO EN ESCABECHE</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/escabeche.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+            Filete de pescado. 400 grs. de filete de pescado de tu preferencia<br>
+            4 cdas. de aceite de oliva<br>
+            Cebolla. Media cebolla morada<br>
+            Ajo. 1 diente de ajo finamente picado<br>
+            Perejil. 2 cdas. de perejil finamente picado<br>
+            Orégano. Media cda. de orégano<br>
+            Zanahoria. 2 zanahorias<br>
+            Calabaza. 2 calabacitas<br>
+            Chile. 2 chiles jalapeños en rajas al gusto<br>
+            Lechuga. 2 hojas de lechuga<br>
+            Sal al gusto<br>
+            Pimienta. Pimienta al gusto<p>
+      
+       <b> Preparación </b> <p>
+		  
+           Lave el pescado y salpimiéntelo, dele un hervor agregando el jugo de medio limón y un poco de sal, hasta que se cueza.<p>
+
+En un sartén con 2 cdas. de aceite, sofría la cebolla con el ajo y las semillas, agregue la verdura, el chile y sazone.<p>
+
+Agregue el pescado en trozos medianos, el orégano, el resto del aceite, el vinagre y sazone de nuevo.<p>
+
+Cuando suelte el hervor retire y coloque sobre las lechugas, adorne con el perejil.<p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="ceviche">
+	<div data-role="header">
+    	<a href="#insular" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CEVICHE</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/ceviche.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      
+      		600 gramos  de filete de corvina (también puede usar tilapia o cualquier pescado blanco muy fresco) <br>
+            ½ taza (125 gramos) de cebolla roja cortada en julianas finas <br>
+            6 cubos (125 ml.) de hielo <br>
+            2 cucharaditas de sal <br>
+            ½ taza (125 ml) de jugo de limón <br>
+            1 chile rojo finamente picado <br>
+            2 cucharadas de cilantro finamente picado <br>
+            1 taza (200 gramos) de mazorca desgranada, cocinada y fria <br>
+            1 pizca de pimienta negra (opcional)  <p>
+      
+       <b> Preparación </b> <p>
+		  Corte el filete de pescado en cubos de 2 X 2 centímetros aproximadamente. <p> 
+Lave las julianas de cebolla y los cubos de pescado en abundante agua y escurra bien.  <p> 
+
+En un recipiente hondo ponga el pescado y la cebolla. Adicione los cubos de hielo y la sal. Bañe con el jugo de Limón.<p>
+Agregue el chile, revuelva y deje marinar durante 20 minutos. <p> 
+
+Finalice incorporando el cilantro, el maíz y la pimienta negra. <p>
+Sirva inmediatamente acompañado de chips de plátano o yuca.  <p> 
+
+Para conservar la frescura del pescado, no guarde el ceviche por más de dos horas.
+           
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="encocado">
+	<div data-role="header">
+    	<a href="#insular" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>PESCADO ENCOCADO</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/encocado.png" style="width="320" height="213""></a></div>
+    	
+        <b> 4 Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		<b> <i> Aliño para el pescado </i> </b>
+                        2 ½ libras de filetes de pescado fresco, cortado en trozos de tamaño medio<br>
+                        ¼ de taza de jugo de limón, de unos 2 limones<br>
+                        El jugo de 2 naranjas<br>
+                        4 dientes de ajo, machacados<br>
+                        1 cucharadita de comino molido<br>
+                        1 cucharadita de pimentón molido<br>
+                        1 cucharadita de pepitas de cilantro molido<p>
+                        
+                        2 cucharadas de aceite, de girasol o de oliva<br>
+                        1 cebolla blanca perla mediana, picada en cubitos<br>
+                        2 pimientos, picados en cubitos<br>
+                        4 tomates tipo roma, pelados y picados<br>
+                        1 coco fresco, licuado el agua y la carne o una lata de 14 oz de leche de coco<br>
+                        3 cucharadas de cilantro, finamente picado<br>
+                        Sal al gusto<p>
+                    
+      
+       <b> Preparación </b> <p>
+		  	Ponga el jugo de limón, el jugo de naranja, el ajo machacado, el comino molido, el pimentón, las pepitas de cilantro molidas, y la sal en un tazón pequeño. Mezcle bien para preparar el aliño del pescado.<p>
+Ponga los trozos de pescado en un recipiente y cúbralos con el aliño, déjelo reposar en la refrigeradora durante 1 – 2 horas.<p>
+Caliente el aceite para preparar un refrito o sofrito, agregue las cebollas picadas, tomates, pimientos y sal, cocine a fuego medio durante 5 minutos.<p>
+Agregue la leche de coco, fresca o enlatada, al refrito. Mezcle bien y cocine durante 10 minutos, si quiere que su salsa quede bien espesa puede agregar ½ cucharadita de maicena o almidón de yuca (tapioca).<p>
+Agregue los trozos de pescado, tape parcialmente y deje cocinar a fuego lento durante unos 20-25 minutos.<p>
+Espolvoree con cilantro.<p>
+Sirva con arroz y plátanos maduros fritos.<p>
+           
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="cazuela">
+	<div data-role="header">
+    	<a href="#insular" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>CUZUELA DE MARISCOS</h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<img src="img/cazuela.png" style="width="320" height="213""></a></div>
+    	
+        <b>  Personas </b> <p>
+      <b> Ingredientes </b> <p>
+      		1 crema de mariscos <br>
+            1 cubo de caldo de pescado <br>
+            1 bandeja de camarones crudos <br>
+            1 bandeja de anillos de calamar <br>
+            1/2 filete de congrio cortado en cubos <br>
+            1 cucharada de pasta de ajo <br>
+            1 y 1/2 cucharadas de mantequilla <br>
+            1 pimentón finamente picado <br>
+            2 cucharadas de pasta de tomate<br> 
+            1 ramillete de laurel y tomillo <br>
+            4 cucharadas de queso amarillo rallado <br>
+            1 cucharada de perejil liso finamente picado<br> 
+            3 tazas de agua 1 taza de leche <br>
+            1 cucharada de crema de leche <br>
+            1/2 copa de vino blanco <br>
+            1/2 copa de brandy <br>
+            1 cucharada de jugo de limón <br>
+            Sal y pimienta al gusto <br>
+            Gotas de ají al gusto<p>
+      
+       <b> Preparación </b> <p>
+		  	Para la crema de mariscos, disuelva el contenido del sobre en el agua y cocine a fuego lento durante cinco minutos, agitando constantemente hasta que hierva; luego, vierta la leche y agite durante cuatro minutos más hasta que la mezcla esté cremosa. Reserve. <p>
+
+Mientras tanto, en una sartén a fuego alto agregue la mantequilla y sofría por un minuto el ajo, el pimentón, el tomillo y el laurel; después adicione los calamares, los cubos de pescado y los camarones, cocinando durante dos minutos más; luego, añada la pasta de tomate, el cubo de pescado, el vino blanco, la crema de leche y el brandy. <p>
+
+Espere a que la preparación tome de nuevo temperatura y adicione sal, pimienta, el jugo de limón y el perejil. <p>
+
+Por último, integre la preparación anterior a la crema de mariscos ya preparada, deje hervir y rectifique el sabor. Sirva y decore con el queso.<p>
+           
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="poco">
+	<div data-role="header">
+    	<a href="#inicial" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>TIEMPO BAJO </h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<div class=""><a href="#cachapa"><img src="img/cachapa.png" style="width="320" height="213""></a></div>
+    	<div class=""><a href="#arepa"><img src="img/arepa.png" style="width="320" height="213""></a></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="medio">
+	<div data-role="header">
+    	<a href="#inicial" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>TIEMPO MEDIO </h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<div class=""><a href="#escabeche"><img src="img/escabeche.png" style="width="320" height="213""></a></div>
+        <div class=""><a href="#cuy"><img src="img/cuy.png" style="width="320" height="213""></a></div>
+    	
+</div>
+</div>
+
+
+
+
+
+
+
+<div data-role="page" id="alto">
+	<div data-role="header">
+    	<a href="#inicial" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all">No text</a>
+        <h1 class="ui-title" role="heading" aria-level="1"><img src="img/nuevo.png" width="28" height="28" align="absmiddle"> Receta Colombia</h1>
+      
+    	<h1>TIEMPO ALTO </h1>
+    </div>
+    <div role="main" class="ui-content">
+    	<center>
+    	<div class=""><a href="#tamal"><img src="img/tamaltolimense.png" style="width="320" height="213""></a></div>
+        <div class=""><a href="#mamona"><img src="img/Ternera.png" style="width="320" height="213""></a></div>
+    	
+</div>
+</div>
+
+
 
 
 
